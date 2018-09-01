@@ -15,7 +15,7 @@ Pod::Spec.new do |s|
   s.author           = { 'Andrzej Zuzak' => 'andrzej.zuzak@miquido.com' }
   s.source           = { :git => 'https://github.com/miquido/NoBoilerplateTableViews.git', :tag => s.version.to_s }
 
-  s.platform         = :ios, "9.3"
+  s.ios.deployment_target = '8.0'
 
   s.dependency 'RxSwift', '~> 4.0'
   s.dependency 'RxCocoa', '~> 4.0'
