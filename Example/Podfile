@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NoBoilerplateTableViews_Example' do
+  pod 'NoBoilerplateTableViews', :path => '../'
+
+  target 'NoBoilerplateTableViews_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
