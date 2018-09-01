@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name             = 'NoBoilerplateTableViews'
-  s.version          = '0.2.0'
+  s.version          = '0.1.0'
   s.summary          = 'A set of protocols and extensions to simplify the creation of View Controllers with UITableViews.'
 
   s.description      = <<-DESC
@@ -13,9 +13,8 @@ Pod::Spec.new do |s|
 
   s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'Andrzej Zuzak' => 'andrzej.zuzak@miquido.com' }
-  s.source           = { :git => 'https://github.com/andzuz/NBTV.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/miquido/NoBoilerplateTableViews.git', :tag => s.version.to_s }
 
-  #s.ios.deployment_target = '9.3'
   s.platform         = :ios, "9.3"
 
   s.dependency 'RxSwift', '~> 4.0'
