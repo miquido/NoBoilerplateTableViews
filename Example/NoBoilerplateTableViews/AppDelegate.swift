@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  NoBoilerplateTableViews
-//
-//  Created by andrzej-zuzak on 09/01/2018.
-//  Copyright (c) 2018 andrzej-zuzak. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
