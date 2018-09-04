@@ -17,12 +17,12 @@ extension UITableViewWithRxConfigurable {
     
     /// Convenience method for configuring delegates, binding to data source and assigning cell tap callbacks.
     public func configureTableViewWithRx() {
-        configureDelegates()
+        configureDelegate()
         bindItemsRelayToTableView()
         configureSelectingCells()
     }
     
-    private func configureDelegates() {
+    private func configureDelegate() {
         tableView.rx
             .setDelegate(self)
             .disposed(by: disposeBag)
