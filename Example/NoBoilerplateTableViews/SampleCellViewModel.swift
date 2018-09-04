@@ -1,5 +1,5 @@
 import UIKit
 
-struct SampleCellViewModel: Equatable {
+struct SampleCellViewModel {
     let backgroundColor: UIColor
 }

@@ -1,0 +1,12 @@
+language: swift
+osx_image: xcode9.3
+ 
+# Pre-start iPhone 6s + iOS 11.3 simulator because of (unresolvd for Travis CI) exit 65 error while running tests
+before_install:
+  - npm install ios-sim -g
+  - ios-sim start --devicetypeid "com.apple.CoreSimulator.SimDeviceType.iPhone-6s, 11.3"
+ 
+script:
+  - cd Example
+  - bundle exec pod install
+  - xcodebuild test -workspace NoBoilerplateTableViews.xcworkspace -scheme NoBoilerplateTableViews-Example -destination "platform=iOS Simulator,name=iPhone 6s,OS=11.3" ONLY_ACTIVE_ARCH=NO -quiet
