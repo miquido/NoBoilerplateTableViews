@@ -23,9 +23,6 @@ extension UITableViewWithRxConfigurable {
     }
     
     private func configureDelegates() {
-        tableView.dataSource = nil
-        tableView.delegate = nil
-        
         tableView.rx
             .setDelegate(self)
             .disposed(by: disposeBag)
